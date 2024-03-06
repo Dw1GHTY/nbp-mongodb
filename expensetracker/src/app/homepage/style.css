@@ -1,0 +1,694 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white !important;
+  background-image: white !important;
+}
+
+.mejn {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.glavnideo {
+  display: flex;
+  flex-direction: row;
+}
+
+.barchart {
+  width: 400px;
+  height: 400px;
+}
+
+.radiochart {
+  display: flex;
+  flex-direction: row;
+}
+
+.chartchoice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.chartlabel1 {
+  /* padding: 10px;
+  cursor: pointer;
+  background-color: rgb(235, 146, 50); */
+
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 14px 24px;
+  border: none;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s,
+    -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+  background: linear-gradient(
+    to right,
+    rgb(230, 30, 77) 0%,
+    rgb(227, 28, 95) 50%,
+    rgb(215, 4, 102) 100%
+  );
+  color: #fff;
+}
+
+.chartlabel2 {
+  /* padding: 10px;
+  cursor: pointer;
+  background-color: rgb(235, 146, 50); */
+
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 14px 24px;
+  border: none;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s,
+    -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+  background: rgb(28, 208, 60);
+  background: linear-gradient(
+    90deg,
+    rgba(28, 208, 60, 1) 0%,
+    rgba(28, 208, 60, 1) 50%,
+    rgba(28, 208, 60, 1) 100%
+  );
+  color: #fff;
+}
+
+.selected1 {
+  /* border: 1px solid black; */
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 180px;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  /* color: gray; */
+  width: 410px;
+  margin-left: 75px;
+  margin-top: 35px;
+  overflow: auto;
+  border: 1px solid steelblue;
+  /* padding: 30px;
+  padding-top: 35px;
+  padding-left: 55px; */
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.itemright {
+  display: flex;
+  flex-direction: column;
+  margin-left: 17px;
+  margin-top: 4px;
+}
+
+.itemright1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.itemright2 {
+  display: flex;
+  flex-direction: row;
+  width: 240px;
+  /* padding-right: 195px; */
+}
+
+.itemright3 {
+  position: relative;
+  right: -8px;
+}
+
+.datumbrt {
+  width: 110px !important;
+}
+
+p {
+  margin: 0;
+}
+
+.itemicon {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Food {
+  background-color: rgb(253, 212, 215);
+  color: rgb(253, 60, 74);
+  font-size: xx-large;
+}
+
+.Shopping {
+  background-color: rgb(252, 238, 212);
+  color: rgb(252, 172, 18);
+  font-size: xx-large;
+}
+
+.Transportation {
+  background-color: rgb(189, 220, 255);
+  color: rgb(0, 119, 255);
+  font-size: xx-large;
+}
+
+.Fun {
+  background-color: rgb(238, 229, 255);
+  color: rgb(127, 61, 255);
+  font-size: xx-large;
+}
+
+.Health {
+  background-color: rgb(207, 250, 234);
+  color: rgb(0, 168, 107);
+  font-size: xx-large;
+}
+
+.Other {
+  background-color: rgb(227, 228, 229);
+  color: rgb(0, 0, 0);
+  font-size: xx-large;
+}
+
+.Other1 {
+  background-color: rgb(227, 228, 229);
+  color: rgb(0, 0, 0);
+  font-size: xx-large;
+}
+
+.Other2 {
+  background-color: rgb(227, 228, 229);
+  color: rgb(0, 0, 0);
+  font-size: xx-large;
+}
+
+.Salary {
+  background-color: rgb(212, 247, 255);
+  color: rgb(0, 137, 255);
+  font-size: xx-large;
+}
+.Loan {
+  background-color: rgb(255, 237, 205);
+  color: rgb(255, 94, 77);
+  font-size: xx-large;
+}
+.Gift {
+  background-color: rgb(255, 224, 230);
+  color: rgb(255, 52, 94);
+  font-size: xx-large;
+}
+.Gambling {
+  background-color: rgb(255, 229, 204); /* Braon nijansa */
+  color: rgb(139, 69, 19); /* Tamna braon boja teksta */
+  font-size: xx-large;
+}
+
+.date-search-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 75px;
+  margin-top: 10px;
+  width: 300px;
+}
+
+.buttonsearch {
+  margin-left: 75px;
+  margin-top: 15px;
+  background-color: rgb(15, 190, 26);
+  font-weight: bold;
+}
+
+.naslov {
+  font-weight: bold;
+}
+
+.opis {
+  color: gray;
+}
+
+.pareminus {
+  color: red;
+  font-weight: bold;
+}
+
+.pareplus {
+  color: green;
+  font-weight: bold;
+}
+
+.radio-button-group {
+  display: flex;
+  gap: 0px;
+  margin-left: 75px;
+  margin-top: 50px;
+  width: 900px;
+  margin-right: 110px;
+}
+
+.radio-button {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Postavljanje teksta na sredinu */
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 118px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.radio-button input {
+  display: none; /* Sakrivanje radio buttona */
+}
+
+.radio-button:hover {
+  background-color: #f0f0f0;
+}
+
+.selected {
+  background-color: #2b89fb;
+  color: white;
+  border-color: #2b89fb;
+}
+
+.selected:hover {
+  background-color: #2b89fb;
+}
+
+.plusincex {
+  position: relative;
+  top: 2px;
+  right: 4px;
+}
+
+.buttonb {
+  margin-left: 75px;
+  margin-top: 50px;
+  width: auto;
+  height: 55px;
+  border-radius: 15px;
+  border: 1px solid steelblue;
+  font-weight: bold;
+  font-size: large;
+  color: white;
+  background-color: rgb(4, 155, 4);
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.incomediv {
+  width: 400px;
+  margin-left: 75px;
+  margin-top: 45px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  padding-top: 20px;
+  border-radius: 5px;
+}
+
+.expense-form {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.income-form {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 310px;
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+/* Stilizacija dugmeta */
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.buttonb:hover {
+  background-color: white;
+  color: rgb(4, 155, 4);
+  /* rgb(52, 159, 246) */
+  transition-duration: 8ms;
+}
+
+.balancebuttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.balances {
+  display: flex;
+  flex-direction: row;
+}
+
+.totalbalance {
+  color: gray;
+  width: 500px;
+  margin-left: 75px;
+  margin-top: 45px;
+  overflow: auto;
+  border: 1px solid steelblue;
+  padding: 30px;
+  padding-top: 35px;
+  padding-left: 55px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  font-size: medium;
+  font-weight: bold;
+  background-color: rgb(249, 249, 249);
+}
+
+.expenseincome {
+  width: 500px;
+  margin-left: 75px;
+  margin-top: 45px;
+  overflow: auto;
+  border: 1px solid steelblue;
+  padding: 30px;
+  padding-top: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(252, 252, 252);
+}
+
+.expense {
+  overflow: auto;
+  /* border: 1px solid steelblue; */
+  /* padding: 30px; */
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  border-radius: 5px;
+  background-color: white;
+  /* font-size: medium; */
+  font-weight: bold;
+  color: gray;
+}
+
+.income {
+  width: 320px;
+  margin-top: 15px;
+  overflow: auto;
+  /* border: 1px solid steelblue; */
+  /* padding: 30px; */
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  border-radius: 5px;
+  background-color: white;
+  font-size: medium;
+  font-weight: bold;
+  color: gray;
+}
+
+.amountexpense {
+  color: black;
+  font-size: 1cm;
+  display: flex;
+  color: red;
+}
+
+.amountincome {
+  color: black;
+  font-size: 1cm;
+  display: flex;
+  color: green;
+}
+
+.amount {
+  margin-top: 37px;
+  color: black;
+  font-size: 1.5cm;
+  display: flex;
+}
+
+.euro {
+  position: relative;
+  top: 5px;
+  right: 6.5px;
+}
+
+.euroexpinc {
+  position: relative;
+  top: 5px;
+  right: 6.5px;
+}
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+  background-color: #328f8a;
+  background-image: linear-gradient(90deg, #328f8a, #08ac4b);
+  background-color: white;
+  background-image: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* LOGIN DEO ------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+header .header {
+  background-color: #fff;
+  height: 45px;
+}
+header a img {
+  width: 134px;
+  margin-top: 4px;
+}
+.login-page {
+  width: 400px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.login-page .form .login {
+  margin-top: -31px;
+  margin-bottom: 26px;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  max-width: 400px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background-color: #328f8a;
+  background-image: linear-gradient(45deg, #328f8a, #08ac4b);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.bodyloginregister {
+  /* height: 100%; */
+  background-color: #328f8a;
+  background-image: linear-gradient(90deg, #328f8a, #08ac4b);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+/* -------------------------------------- */
+
+header {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: linear-gradient(
+    90deg,
+    rgba(253, 29, 29, 1) 0%,
+    rgba(107, 201, 37, 1) 0%,
+    rgba(48, 180, 112, 1) 44%
+  );
+
+  font-size: 18px;
+  /* font-weight: 600; */
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 21px;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  margin: 0;
+}
+
+.reacticon {
+  position: relative;
+  left: 2px;
+  top: 2px;
+}
+
+.logout {
+  display: flex;
+  position: absolute;
+  top: 91%;
+  right: 5%;
+  padding: 6px;
+  padding-right: 56px;
+  padding-left: 56px;
+  border: 1px solid black;
+  border-radius: 8px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: rgb(243, 243, 243);
+  color: green;
+  font-weight: bold;
+}
+
+.logout:hover {
+  background-color: white;
+}
+
+.welcome {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  padding: 6px;
+  padding-right: 26px;
+  padding-left: 26px;
+  border: 1px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.welcome:hover {
+  background-color: white;
+  color: green;
+  transition: 1.5;
+}
+
+.headerNaslov {
+  color: white;
+  text-align: center;
+  font-size: 31px;
+  /* font-weight: 600; */
+  letter-spacing: 1px;
+}
+
+.stagod {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stagod button {
+  margin-left: 95px;
+  margin-top: 40px;
+  height: 42px;
+}
+
+.stagod2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.stagod2 p {
+  margin-left: 28px;
+  color: gray;
+  width: 170px;
+}
